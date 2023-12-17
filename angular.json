@@ -5,6 +5,11 @@
   "projects": {
     "ngx-flow-ui": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/ngx-flow-ui",
       "sourceRoot": "projects/ngx-flow-ui/src",
       "prefix": "ngx-flow-ui",
