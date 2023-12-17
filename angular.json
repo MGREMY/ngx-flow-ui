@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/ngx-flow-ui",
       "sourceRoot": "projects/ngx-flow-ui/src",
-      "prefix": "lib",
+      "prefix": "ngx-flow-ui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -29,6 +29,12 @@
           "options": {
             "tsConfig": "projects/ngx-flow-ui/tsconfig.spec.json",
             "polyfills": ["zone.js", "zone.js/testing"]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["**/*.ts", "**/*.html"]
           }
         }
       }
@@ -120,8 +126,17 @@
             "styles": ["projects/ngx-flow-ui-demo/src/styles.scss"],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["**/*.ts", "**/*.html"]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": ["@angular-eslint/schematics"]
   }
 }

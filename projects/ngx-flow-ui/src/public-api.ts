@@ -1,5 +1,7 @@
-/*
+/**
  * Public API Surface of ngx-flow-ui
+ *
+ * @format
  */
 
 export * from './lib/ngx-flow-ui.service';
