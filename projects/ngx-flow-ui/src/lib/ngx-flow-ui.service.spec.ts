@@ -1,3 +1,5 @@
+/** @format */
+
 import { TestBed } from '@angular/core/testing';
 
 import { NgxFlowUiService } from './ngx-flow-ui.service';

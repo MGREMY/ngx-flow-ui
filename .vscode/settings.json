@@ -1,0 +1,11 @@
+{
+  "[html][typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingImportsByDefault": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": false,
+    "files.eol": "\n"
+  }
+}

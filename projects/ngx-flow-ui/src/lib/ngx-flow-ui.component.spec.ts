@@ -1,3 +1,5 @@
+/** @format */
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NgxFlowUiComponent } from './ngx-flow-ui.component';
@@ -8,10 +10,9 @@ describe('NgxFlowUiComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NgxFlowUiComponent]
-    })
-    .compileComponents();
-    
+      imports: [NgxFlowUiComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NgxFlowUiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
