@@ -3,8 +3,28 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Build lib",
       "type": "npm",
-      "script": "start",
+      "script": "build:lib",
+      "isBackground": false,
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "(.*?)"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation complete"
+          }
+        }
+      }
+    },
+    {
+      "label": "Serve demo",
+      "type": "npm",
+      "script": "start:demo",
       "isBackground": true,
       "problemMatcher": {
         "owner": "typescript",
@@ -21,22 +41,23 @@
       }
     },
     {
-      "type": "npm",
-      "script": "test",
-      "isBackground": true,
-      "problemMatcher": {
-        "owner": "typescript",
-        "pattern": "$tsc",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": {
-            "regexp": "(.*?)"
-          },
-          "endsPattern": {
-            "regexp": "bundle generation complete"
-          }
-        }
-      }
+      "label": "Start",
+      "dependsOn": ["Build lib", "Serve demo"],
+      "dependsOrder": "sequence"
+    },
+    {
+      "label": "end all",
+      "command": "echo ${input:terminate}",
+      "type": "shell",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "terminate",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "terminateAll"
     }
   ]
 }

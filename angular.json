@@ -35,6 +35,105 @@
           }
         }
       }
+    },
+    "ngx-flow-ui-demo": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/ngx-flow-ui-demo",
+      "sourceRoot": "projects/ngx-flow-ui-demo/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/ngx-flow-ui-demo",
+            "index": "projects/ngx-flow-ui-demo/src/index.html",
+            "browser": "projects/ngx-flow-ui-demo/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/ngx-flow-ui-demo/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/ngx-flow-ui-demo/src/favicon.ico",
+              "projects/ngx-flow-ui-demo/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-flow-ui-demo/src/styles.scss"
+            ],
+            "scripts": [],
+            "server": "projects/ngx-flow-ui-demo/src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "projects/ngx-flow-ui-demo/server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "ngx-flow-ui-demo:build:production"
+            },
+            "development": {
+              "buildTarget": "ngx-flow-ui-demo:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "ngx-flow-ui-demo:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/ngx-flow-ui-demo/tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "projects/ngx-flow-ui-demo/src/favicon.ico",
+              "projects/ngx-flow-ui-demo/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-flow-ui-demo/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }
