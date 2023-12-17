@@ -28,10 +28,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/ngx-flow-ui/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -53,18 +50,14 @@
             "outputPath": "dist/ngx-flow-ui-demo",
             "index": "projects/ngx-flow-ui-demo/src/index.html",
             "browser": "projects/ngx-flow-ui-demo/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/ngx-flow-ui-demo/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/ngx-flow-ui-demo/src/favicon.ico",
               "projects/ngx-flow-ui-demo/src/assets"
             ],
-            "styles": [
-              "projects/ngx-flow-ui-demo/src/styles.scss"
-            ],
+            "styles": ["projects/ngx-flow-ui-demo/src/styles.scss"],
             "scripts": [],
             "server": "projects/ngx-flow-ui-demo/src/main.server.ts",
             "prerender": true,
@@ -117,19 +110,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/ngx-flow-ui-demo/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/ngx-flow-ui-demo/src/favicon.ico",
               "projects/ngx-flow-ui-demo/src/assets"
             ],
-            "styles": [
-              "projects/ngx-flow-ui-demo/src/styles.scss"
-            ],
+            "styles": ["projects/ngx-flow-ui-demo/src/styles.scss"],
             "scripts": []
           }
         }
