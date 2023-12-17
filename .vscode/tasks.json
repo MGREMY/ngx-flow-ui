@@ -3,9 +3,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Build lib",
+      "label": "lib:build",
       "type": "npm",
-      "script": "build:lib",
+      "script": "lib:build",
       "isBackground": false,
       "problemMatcher": {
         "owner": "typescript",
@@ -22,9 +22,9 @@
       }
     },
     {
-      "label": "Serve demo",
+      "label": "demo:start",
       "type": "npm",
-      "script": "start:demo",
+      "script": "demo:start",
       "isBackground": true,
       "problemMatcher": {
         "owner": "typescript",
@@ -42,7 +42,7 @@
     },
     {
       "label": "Start",
-      "dependsOn": ["Build lib", "Serve demo"],
+      "dependsOn": ["lib:build", "demo:start"],
       "dependsOrder": "sequence"
     },
     {
