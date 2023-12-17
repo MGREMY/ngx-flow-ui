@@ -5,6 +5,4 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class NgxFlowUiService {
-  constructor() {}
-}
+export class NgxFlowUiService {}
