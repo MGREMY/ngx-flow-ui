@@ -2,18 +2,18 @@
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ButtonComponent } from './button.component';
+import { NgxFlowUiButtonComponent } from './ngx-flow-ui-button.component';
 
-describe('ButtonComponent', () => {
-  let component: ButtonComponent;
-  let fixture: ComponentFixture<ButtonComponent>;
+describe('NgxFlowUiButtonComponent', () => {
+  let component: NgxFlowUiButtonComponent;
+  let fixture: ComponentFixture<NgxFlowUiButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ButtonComponent],
+      imports: [NgxFlowUiButtonComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ButtonComponent);
+    fixture = TestBed.createComponent(NgxFlowUiButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
