@@ -1,11 +1,15 @@
-/** @type {import('tailwindcss').Config} */
+/**
+ * @format
+ * @type {import('tailwindcss').Config}
+ */
+
 module.exports = {
   content: [
-    "./projects/ngx-flow-ui/src/**/*.{html,ts}",
-    "./node_modules/flowbite/**/*.js",
+    './node_modules/flowbite/**/*.js',
+    './projects/ngx-flow-ui/**/*.{html,ts}',
   ],
   theme: {
     extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require('flowbite/plugin')],
 };

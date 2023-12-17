@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "lib:build": "npx tailwindcss -o ./projects/ngx-flow-ui/src/styles/tailwind.scss --minify & ng build ngx-flow-ui",
+    "lib:build": "ng build ngx-flow-ui",
     "lib:test": "ng test ngx-flow-ui --watch",
     "lib:test:headless": "ng test ngx-flow-ui --no-watch --browsers=FirefoxHeadless",
     "demo:build": "ng build ngx-flow-ui-demo",
