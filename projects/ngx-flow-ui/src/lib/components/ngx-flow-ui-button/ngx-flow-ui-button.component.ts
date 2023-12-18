@@ -14,7 +14,6 @@ import * as buttonProperties from './ngx-flow-ui-button.properties';
     [disabled]="disabled">
     <ng-content></ng-content>
   </button>`,
-  styleUrls: ['../../../../_index.scss'],
 })
 export class NgxFlowUiButtonComponent implements OnInit {
   @Input() color: properties.Colors = 'info';
