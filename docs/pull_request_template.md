@@ -2,12 +2,11 @@
 
 ## Describe your changes
 
-## [Notion](https://mgremy.notion.site/7746453d0c4c40678d0ed2e1929e398e?v=173ca996a42d4e048f491c27f3a64914&pvs=4) linked task
+## Github linked issue
 
-> TASKS-X
+> Closes #ISSUE_NUMBER
 
 ## Checklist before requesting a review
 
-- [ ] I added the [Notion](https://mgremy.notion.site/7746453d0c4c40678d0ed2e1929e398e?v=173ca996a42d4e048f491c27f3a64914&pvs=4) task Id in the PR title like so **_[TASKS-X]_ PR Title**
 - [ ] I have performed a self-review of my code
 - [ ] If it is a core feature, I have added thorough tests.
