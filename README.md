@@ -4,8 +4,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
 
-> Check the project in [Notion](https://mgremy.notion.site/ngx-flow-ui-67fd2aafbba04cb39ac4c7a3d2f9be0b?pvs=4)
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
