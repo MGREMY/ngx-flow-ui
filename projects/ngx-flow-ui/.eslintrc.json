@@ -16,7 +16,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "ngx-flow-ui",
+            "prefix": "ngxFlowUi",
             "style": "camelCase"
           }
         ],
