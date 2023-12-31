@@ -1,6 +1,6 @@
 /** @format */
 
-export type Colors = 'info' | 'success' | 'failure' | 'warning';
+export type Color = 'default' | 'alternative' | 'dark' | 'light';
 
 export type FillClass = 'solid' | 'outline';
 

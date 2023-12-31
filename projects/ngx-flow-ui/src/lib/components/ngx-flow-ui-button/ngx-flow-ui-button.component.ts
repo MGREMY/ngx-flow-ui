@@ -9,25 +9,23 @@ import * as buttonProperties from './ngx-flow-ui-button.properties';
   selector: 'ngx-flow-ui-button',
   standalone: true,
   imports: [],
-  template: `<button
-    [class]="buttonClass"
-    [disabled]="disabled">
+  template: `<button [class]="buttonClass">
     <ng-content></ng-content>
   </button>`,
 })
 export class NgxFlowUiButtonComponent implements OnInit {
-  @Input() color: properties.Colors = 'info';
+  @Input() color: properties.Color = 'default';
   @Input() fill: properties.FillClass = 'solid';
   @Input() size: properties.Size = 'sm';
-
-  @Input() disabled: boolean = false;
 
   buttonClass: string = '';
 
   ngOnInit(): void {
-    this.buttonClass += buttonProperties.buttonBaseClass.default;
-    this.buttonClass +=
-      buttonProperties.buttonFillColorClass[this.color][this.fill];
-    this.buttonClass += buttonProperties.buttonSizeClass[this.size];
+    this.buttonClass.concat(' ', buttonProperties.buttonBaseClass.default);
+    this.buttonClass.concat(
+      ' ',
+      buttonProperties.buttonFillColorClass[this.fill][this.color]
+    );
+    this.buttonClass.concat(' ', buttonProperties.buttonSizeClass[this.size]);
   }
 }
