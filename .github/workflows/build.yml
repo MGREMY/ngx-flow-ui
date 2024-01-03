@@ -1,3 +1,5 @@
+# @format
+
 name: Node.js Test
 
 on:

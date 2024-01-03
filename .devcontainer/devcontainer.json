@@ -7,9 +7,7 @@
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [
-    4200
-  ],
+  "forwardPorts": [4200],
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "npm install; npm i -g @angular/cli; chmod +x .husky/pre-commit"
   // Configure tool-specific properties.

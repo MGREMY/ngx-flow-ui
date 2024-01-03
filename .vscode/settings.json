@@ -3,7 +3,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.foldingImportsByDefault": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
+      "source.fixAll.eslint": "always",
+      "source.organizeImports": "always"
     },
     "editor.formatOnSave": false,
     "files.eol": "\n"

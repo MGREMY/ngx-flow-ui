@@ -65,10 +65,7 @@
             "polyfills": ["zone.js"],
             "tsConfig": "projects/ngx-flow-ui-demo/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/ngx-flow-ui-demo/src/favicon.ico",
-              "projects/ngx-flow-ui-demo/src/assets"
-            ],
+            "assets": ["projects/ngx-flow-ui-demo/src/favicon.ico", "projects/ngx-flow-ui-demo/src/assets"],
             "styles": ["projects/ngx-flow-ui-demo/src/styles.scss"],
             "scripts": [],
             "server": "projects/ngx-flow-ui-demo/src/main.server.ts",
@@ -125,10 +122,7 @@
             "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/ngx-flow-ui-demo/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/ngx-flow-ui-demo/src/favicon.ico",
-              "projects/ngx-flow-ui-demo/src/assets"
-            ],
+            "assets": ["projects/ngx-flow-ui-demo/src/favicon.ico", "projects/ngx-flow-ui-demo/src/assets"],
             "styles": ["projects/ngx-flow-ui-demo/src/styles.scss"],
             "scripts": [],
             "karmaConfig": "karma.conf.js"
@@ -144,9 +138,7 @@
     }
   },
   "cli": {
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ],
+    "schematicCollections": ["@angular-eslint/schematics"],
     "analytics": "44b4f7df-ee8d-4075-9da7-662bfffad5f3"
   }
 }
