@@ -7,14 +7,5 @@
     },
     "editor.formatOnSave": false,
     "files.eol": "\n"
-  },
-  "github.codespaces.defaultExtensions": [
-    "GitHub.codespaces",
-    "GitHub.vscode-pull-request-github",
-    "angular.ng-template",
-    "bradlc.vscode-tailwindcss",
-    "dbaeumer.vscode-eslint",
-    "EditorConfig.EditorConfig",
-    "johnpapa.Angular2"
-  ]
+  }
 }
