@@ -11,7 +11,7 @@
     4200
   ],
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "npm install; npm i -g @angular/cli; chmod +x .husky/pre-commit"
   // Configure tool-specific properties.
   // "customizations": {},
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
