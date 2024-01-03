@@ -3,25 +3,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "lib:build",
-      "type": "npm",
-      "script": "lib:build",
-      "isBackground": false,
-      "problemMatcher": {
-        "owner": "typescript",
-        "pattern": "$tsc",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": {
-            "regexp": "(.*?)"
-          },
-          "endsPattern": {
-            "regexp": "bundle generation complete"
-          }
-        }
-      }
-    },
-    {
       "label": "demo:start",
       "type": "npm",
       "script": "demo:start",
@@ -39,11 +20,6 @@
           }
         }
       }
-    },
-    {
-      "label": "Start",
-      "dependsOn": ["lib:build", "demo:start"],
-      "dependsOrder": "sequence"
     },
     {
       "label": "end all",

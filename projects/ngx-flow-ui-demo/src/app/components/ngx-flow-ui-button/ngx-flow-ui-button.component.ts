@@ -1,7 +1,7 @@
 /** @format */
 
 import { Component } from '@angular/core';
-import { NgxFlowUiButtonComponent as FlowUiButton } from '@ngx-flow-ui/lib/components/ngx-flow-ui-button/ngx-flow-ui-button.component';
+import { NgxFlowUiButtonComponent as FlowUiButton } from 'ngx-flow-ui/lib/components/ngx-flow-ui-button/ngx-flow-ui-button.component';
 
 @Component({
   selector: 'app-ngx-flow-ui-button',

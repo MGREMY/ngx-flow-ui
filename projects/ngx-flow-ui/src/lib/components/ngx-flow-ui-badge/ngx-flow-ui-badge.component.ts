@@ -2,14 +2,16 @@
 
 import { Component, Input, OnInit } from '@angular/core';
 
-import * as properties from '@ngx-flow-ui/lib/components/ngx-flow-ui.properties';
+import * as properties from 'ngx-flow-ui/lib/components/ngx-flow-ui.properties';
 import { NgxFlowUiBadgeProperties } from './ngx-flow-ui-badge.properties';
 
 @Component({
   selector: 'ngx-flow-ui-badge',
   standalone: true,
   imports: [],
-  template: '',
+  template: `<span [className]="badgeClass">
+    <ng-content></ng-content>
+  </span>`,
 })
 export class NgxFlowUiBadgeComponent implements OnInit {
   @Input() color: properties.Color = 'default';

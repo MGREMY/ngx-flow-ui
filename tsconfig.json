@@ -11,10 +11,8 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
-      "ngx-flow-ui": ["./dist/ngx-flow-ui"],
-      "ngx-flow-ui-demo": ["./dist/ngx-flow-ui-demo"],
-      "@ngx-flow-ui/*": ["./projects/ngx-flow-ui/src/*"],
-      "@ngx-flow-ui-demo/*": ["./projects/ngx-flow-ui-demo/src/*"]
+      "ngx-flow-ui/*": ["./projects/ngx-flow-ui/src/*"],
+      "ngx-flow-ui-demo/*": ["./projects/ngx-flow-ui-demo/src/*"]
     },
     "esModuleInterop": true,
     "sourceMap": true,
