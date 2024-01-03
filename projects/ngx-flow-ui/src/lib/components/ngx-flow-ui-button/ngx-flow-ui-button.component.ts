@@ -22,8 +22,7 @@ export class NgxFlowUiButtonComponent implements OnInit {
 
   ngOnInit(): void {
     this.buttonClass = buttonProperties.buttonBaseClass.default;
-    this.buttonClass +=
-      buttonProperties.buttonFillColorClass[this.fill][this.color];
+    this.buttonClass += buttonProperties.buttonFillColorClass[this.fill][this.color];
     this.buttonClass += buttonProperties.buttonSizeClass[this.size];
   }
 }
