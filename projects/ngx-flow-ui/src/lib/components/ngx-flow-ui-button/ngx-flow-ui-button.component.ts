@@ -2,7 +2,7 @@
 
 import { Component, Input, OnInit } from '@angular/core';
 
-import * as properties from 'ngx-flow-ui/lib/components/ngx-flow-ui.properties';
+import * as properties from '@ngx-flow-ui/lib/components/ngx-flow-ui.properties';
 import { NgxFlowUiButtonProperties } from './ngx-flow-ui-button.properties';
 
 @Component({

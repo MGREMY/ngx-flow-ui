@@ -1,7 +1,7 @@
 /** @format */
 
-import { IComponentProperties } from 'ngx-flow-ui/lib/components/icomponent.properties';
-import * as properties from 'ngx-flow-ui/lib/components/ngx-flow-ui.properties';
+import { IComponentProperties } from '@ngx-flow-ui/lib/components/icomponent.properties';
+import * as properties from '@ngx-flow-ui/lib/components/ngx-flow-ui.properties';
 
 export type buttonPill = 'disable' | 'enable';
 export type buttonMode = 'label' | 'svg' | 'label+svg';

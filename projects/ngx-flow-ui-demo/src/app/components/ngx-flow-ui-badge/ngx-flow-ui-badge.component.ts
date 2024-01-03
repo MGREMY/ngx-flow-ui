@@ -1,7 +1,7 @@
 /** @format */
 
 import { Component } from '@angular/core';
-import { NgxFlowUiBadgeComponent as FlowUiBadge } from 'ngx-flow-ui/lib/components/ngx-flow-ui-badge/ngx-flow-ui-badge.component';
+import { NgxFlowUiBadgeComponent as FlowUiBadge } from '@ngx-flow-ui/lib/components/ngx-flow-ui-badge/ngx-flow-ui-badge.component';
 
 @Component({
   selector: 'app-ngx-flow-ui-badge',
