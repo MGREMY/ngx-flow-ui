@@ -14,5 +14,5 @@ import { NgxFlowUiButtonComponent } from '@ngx-flow-ui/lib/components/ngx-flow-u
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'ngx-flow-ui-demo';
+  title = 'NgxFlowUi';
 }
