@@ -3,24 +3,27 @@
 import { IComponentProperties } from '@ngx-flow-ui/lib/components/icomponent.properties';
 import * as properties from '@ngx-flow-ui/lib/components/ngx-flow-ui.properties';
 
-export class NgxFlowUiButtonProperties implements IComponentProperties {
+export class NgxFlowUiBadgeProperties implements IComponentProperties {
   private static instance: IComponentProperties;
 
   private constructor() {}
 
   public static getInstance(): IComponentProperties {
-    if (!NgxFlowUiButtonProperties.instance) {
-      NgxFlowUiButtonProperties.instance = new NgxFlowUiButtonProperties();
+    if (!NgxFlowUiBadgeProperties.instance) {
+      NgxFlowUiBadgeProperties.instance = new NgxFlowUiBadgeProperties();
     }
 
-    return NgxFlowUiButtonProperties.instance;
+    return NgxFlowUiBadgeProperties.instance;
   }
 
   BaseClass = {
-    default: 'group flex h-min w-fit items-center justify-center p-0.5 text-center font-medium focus:z-10',
+    default: '',
   };
 
-  FillColorClass: Record<properties.FillClass, Record<properties.Color, string>> = {
+  FillColorClass: Record<
+    properties.FillClass,
+    Record<properties.Color, string>
+  > = {
     solid: {
       default: '',
       light: '',
