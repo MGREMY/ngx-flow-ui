@@ -1,6 +1,6 @@
 /** @format */
 
-export type Color = 'default' | 'alternative' | 'dark' | 'light';
+export type Color = 'blue' | 'red' | 'green' | 'yellow';
 
 export type FillClass = 'solid' | 'outline';
 

@@ -5,4 +5,4 @@
  */
 
 export * from '@ngx-flow-ui/lib/ngx-flow-ui.service';
-export * from '@ngx-flow-ui/lib/components/ngx-flow-ui-button/index';
+export * from './lib/components/index';
