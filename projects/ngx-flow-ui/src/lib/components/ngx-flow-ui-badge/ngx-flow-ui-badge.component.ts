@@ -20,11 +20,7 @@ export class NgxFlowUiBadgeComponent implements OnInit {
 
   ngOnInit(): void {
     this.badgeClass += NgxFlowUiBadgeProperties.getInstance().BaseClass.default;
-    this.badgeClass +=
-      NgxFlowUiBadgeProperties.getInstance().FillColorClass[this.fill][
-        this.color
-      ];
-    this.badgeClass +=
-      NgxFlowUiBadgeProperties.getInstance().SizeClass[this.size];
+    this.badgeClass += NgxFlowUiBadgeProperties.getInstance().FillColorClass[this.fill][this.color];
+    this.badgeClass += NgxFlowUiBadgeProperties.getInstance().SizeClass[this.size];
   }
 }

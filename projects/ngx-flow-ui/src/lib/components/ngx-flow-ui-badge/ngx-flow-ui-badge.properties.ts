@@ -20,10 +20,7 @@ export class NgxFlowUiBadgeProperties implements IComponentProperties {
     default: '',
   };
 
-  FillColorClass: Record<
-    properties.FillClass,
-    Record<properties.Color, string>
-  > = {
+  FillColorClass: Record<properties.FillClass, Record<properties.Color, string>> = {
     solid: {
       default: '',
       light: '',
