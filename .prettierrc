@@ -7,9 +7,27 @@
   "arrowParens": "avoid",
   "trailingComma": "es5",
   "bracketSameLine": true,
-  "singleAttributePerLine": true,
+  "singleAttributePerLine": false,
   "printWidth": 120,
   "endOfLine": "lf",
   "insertPragma": true,
-  "plugins": ["prettier-plugin-tailwindcss"]
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ],
+  "overrides": [
+    {
+      "files": "*.html",
+      "excludeFiles": "*inline-template-*.component.html",
+      "options": {
+        "parser": "angular"
+      }
+    },
+    {
+      "files": "*.component.html",
+      "options": {
+        "bracketSameLine": true,
+        "bracketSpacing": false
+      }
+    }
+  ]
 }

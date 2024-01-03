@@ -16,22 +16,20 @@ export class NgxFlowUiButtonProperties implements IComponentProperties {
     return NgxFlowUiButtonProperties.instance;
   }
 
-  BaseClass = {
-    default: 'group flex h-min w-fit items-center justify-center p-0.5 text-center font-medium focus:z-10',
-  };
+  BaseClass = 'group flex h-min w-fit items-center justify-center p-0.5 text-center font-medium focus:z-10';
 
   FillColorClass: Record<properties.FillClass, Record<properties.Color, string>> = {
     solid: {
-      default: '',
-      light: '',
-      dark: '',
-      alternative: '',
+      blue: '',
+      red: '',
+      green: '',
+      yellow: '',
     },
     outline: {
-      default: '',
-      light: '',
-      dark: '',
-      alternative: '',
+      blue: '',
+      red: '',
+      green: '',
+      yellow: '',
     },
   };
 
