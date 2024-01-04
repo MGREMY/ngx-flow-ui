@@ -1,0 +1,7 @@
+{
+  "routes": [
+    "/components",
+    "/components/NgxFlowUiBadge",
+    "/components/NgxFlowUiButton"
+  ]
+}
