@@ -75,7 +75,10 @@
             "inlineStyleLanguage": "scss",
             "assets": ["projects/ngx-flow-ui-demo/src/favicon.ico", "projects/ngx-flow-ui-demo/src/assets"],
             "styles": ["projects/ngx-flow-ui-demo/src/styles.scss"],
-            "scripts": []
+            "scripts": [],
+            "server": "projects/ngx-flow-ui-demo/src/main.server.ts",
+            "prerender": true,
+            "ssr": true
           },
           "configurations": {
             "production": {
