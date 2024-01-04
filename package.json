@@ -7,6 +7,7 @@
     "lib:test": "ng test ngx-flow-ui --watch",
     "lib:test:headless": "ng test ngx-flow-ui --no-watch --browsers=FirefoxHeadless",
     "demo:build": "ng build ngx-flow-ui-demo",
+    "demo:build:gh-page": "ng build ngx-flow-ui-demo --base-href https://mgremy.github.io/ngx-flow-ui",
     "demo:test": "ng test ngx-flow-ui-demo --watch",
     "demo:test:headless": "ng test ngx-flow-ui-demo --no-watch --browsers=FirefoxHeadless",
     "demo:start": "ng serve ngx-flow-ui-demo",
