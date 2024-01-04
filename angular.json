@@ -56,10 +56,18 @@
       "sourceRoot": "projects/ngx-flow-ui-demo/src",
       "prefix": "app",
       "architect": {
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "name": "GREMY Miguel",
+            "email": "mgremy@gremy.ovh",
+            "branch": "gh-pages"
+          }
+        },
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "docs",
+            "outputPath": "dist/ngx-flow-ui-demo",
             "index": "projects/ngx-flow-ui-demo/src/index.html",
             "browser": "projects/ngx-flow-ui-demo/src/main.ts",
             "polyfills": ["zone.js"],
@@ -67,10 +75,7 @@
             "inlineStyleLanguage": "scss",
             "assets": ["projects/ngx-flow-ui-demo/src/favicon.ico", "projects/ngx-flow-ui-demo/src/assets"],
             "styles": ["projects/ngx-flow-ui-demo/src/styles.scss"],
-            "scripts": [],
-            "server": "projects/ngx-flow-ui-demo/src/main.server.ts",
-            "prerender": false,
-            "ssr": false
+            "scripts": []
           },
           "configurations": {
             "production": {
