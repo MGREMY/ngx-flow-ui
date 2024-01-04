@@ -59,7 +59,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ngx-flow-ui-demo",
+            "outputPath": "docs",
             "index": "projects/ngx-flow-ui-demo/src/index.html",
             "browser": "projects/ngx-flow-ui-demo/src/main.ts",
             "polyfills": ["zone.js"],
@@ -69,10 +69,8 @@
             "styles": ["projects/ngx-flow-ui-demo/src/styles.scss"],
             "scripts": [],
             "server": "projects/ngx-flow-ui-demo/src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "projects/ngx-flow-ui-demo/server.ts"
-            }
+            "prerender": false,
+            "ssr": false
           },
           "configurations": {
             "production": {
