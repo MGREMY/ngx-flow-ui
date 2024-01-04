@@ -5,6 +5,7 @@
     "bradlc.vscode-tailwindcss",
     "dbaeumer.vscode-eslint",
     "EditorConfig.EditorConfig",
-    "johnpapa.Angular2"
+    "johnpapa.Angular2",
+    "esbenp.prettier-vscode"
   ]
 }

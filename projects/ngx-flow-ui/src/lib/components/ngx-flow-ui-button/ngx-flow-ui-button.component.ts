@@ -3,7 +3,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 import * as properties from '@ngx-flow-ui/lib/components/ngx-flow-ui.properties';
-import { NgxFlowUiButtonProperties } from './ngx-flow-ui-button.properties';
+import * as buttonProperties from './ngx-flow-ui-button.properties';
 
 @Component({
   selector: 'ngx-flow-ui-button',
@@ -18,11 +18,17 @@ export class NgxFlowUiButtonComponent implements OnInit {
   @Input() fill: properties.FillClass = 'solid';
   @Input() size: properties.Size = 'sm';
 
+  @Input() mode: buttonProperties.buttonMode = 'label';
+
   buttonClass: string = '';
 
   ngOnInit(): void {
-    this.buttonClass += NgxFlowUiButtonProperties.getInstance().BaseClass;
-    this.buttonClass += NgxFlowUiButtonProperties.getInstance().FillColorClass[this.fill][this.color];
-    this.buttonClass += NgxFlowUiButtonProperties.getInstance().SizeClass[this.size];
+    this.buttonClass += buttonProperties.NgxFlowUiButtonProperties.getInstance().BaseClass;
+    this.buttonClass += buttonProperties.NgxFlowUiButtonProperties.getInstance().SizeClass[this.size];
+    this.buttonClass += buttonProperties.NgxFlowUiButtonProperties.getInstance().FillColorClass[this.fill][this.color];
+    if (this.fill == 'outline') {
+      this.buttonClass += buttonProperties.NgxFlowUiButtonProperties.getInstance().BorderColorClass[this.color];
+    }
+    this.buttonClass += buttonProperties.NgxFlowUiButtonProperties.getInstance().ModeClass[this.mode];
   }
 }

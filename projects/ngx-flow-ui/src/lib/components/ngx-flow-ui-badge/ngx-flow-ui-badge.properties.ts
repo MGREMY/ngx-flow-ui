@@ -3,8 +3,8 @@
 import { IComponentProperties } from '@ngx-flow-ui/lib/components/icomponent.properties';
 import * as properties from '@ngx-flow-ui/lib/components/ngx-flow-ui.properties';
 
-export type buttonPill = 'disable' | 'enable';
-export type buttonMode = 'label' | 'svg' | 'label+svg';
+export type badgePill = 'disable' | 'enable';
+export type badgeMode = 'label' | 'svg' | 'label+svg';
 
 export class NgxFlowUiBadgeProperties implements IComponentProperties {
   private static instance: NgxFlowUiBadgeProperties;
@@ -51,12 +51,12 @@ export class NgxFlowUiBadgeProperties implements IComponentProperties {
     yellow: ' border border-yellow-400',
   };
 
-  PillClass: Record<buttonPill, string> = {
+  PillClass: Record<badgePill, string> = {
     enable: ' rounded-full',
     disable: ' rounded',
   };
 
-  ModeClass: Record<buttonMode, string> = {
+  ModeClass: Record<badgeMode, string> = {
     label: ' px-2.5 py-0.5 font-medium',
     svg: ' inline-flex items-center justify-center w-6 h-6 font-semibold',
     'label+svg': ' px-2.5 py-0.5 inline-flex items-center font-medium',
