@@ -39,7 +39,7 @@ jobs:
           node-version: 20
           cache: 'npm'
       - run: npm ci
-      - run: npm run demo:build
+      - run: npm run demo:build:gh-page
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
