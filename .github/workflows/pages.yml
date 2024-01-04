@@ -34,6 +34,6 @@ jobs:
         run: |
           npm i
           npm run demo:build:prod
-          find ./dist/ngx-flow-ui-demo/browser -mindepth 1 -print -exec mv {} ./dist/ngx-flow-ui-demo \;
+          mv ./dist/ngx-flow-ui-demo/browser/* ./dist/ngx-flow-ui-demo/
           rm -rf ./dist/ngx-flow-ui-demo/{browser,server}
           npm run demo:deploy:prod
