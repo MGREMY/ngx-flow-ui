@@ -11,7 +11,7 @@ export class DisabledDirective {
     protected el: ElementRef,
     protected renderer: Renderer2
   ) {
-    this.renderer.setAttribute(this.el, 'disabled', '');
-    this.renderer.addClass(this.el, 'disabled');
+    this.renderer.setAttribute(this.el.nativeElement, 'disabled', '');
+    this.renderer.addClass(this.el.nativeElement, 'disabled');
   }
 }
