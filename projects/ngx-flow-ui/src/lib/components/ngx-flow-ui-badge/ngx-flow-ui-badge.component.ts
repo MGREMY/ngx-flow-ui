@@ -27,14 +27,14 @@ export class NgxFlowUiBadgeComponent implements OnInit {
     this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().BaseClass;
     this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().SizeClass[this.size];
     this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().FillColorClass[this.fill][this.color];
-    if (this.fill == 'outline' || this.mode == 'label+svg') {
-      this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().BorderColorClass[this.color];
-    }
     this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().ModeClass[this.mode];
-    if (this.pill == 'enable' || this.mode == 'svg') {
-      this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().PillClass['enable'];
-    } else {
-      this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().PillClass[this.pill];
-    }
+    this.badgeClass +=
+      badgeProperties.NgxFlowUiBadgeProperties.getInstance().BorderFillColorClass[
+        this.mode == 'label+svg' || this.fill == 'outline' ? 'outline' : this.fill
+      ][this.color];
+    this.badgeClass +=
+      badgeProperties.NgxFlowUiBadgeProperties.getInstance().PillClass[
+        this.pill == 'enable' || this.mode == 'svg' ? 'enable' : this.pill
+      ];
   }
 }

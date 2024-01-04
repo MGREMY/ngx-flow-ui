@@ -8,4 +8,10 @@ export interface IComponentProperties {
   FillColorClass: Record<properties.FillClass, Record<properties.Color, string>>;
 
   SizeClass: Record<properties.Size, string>;
+
+  BorderFillColorClass: Record<properties.FillClass, Record<properties.Color, string>>;
+}
+
+export interface IDisablableProperties {
+  DisabledFillColorClass: Record<properties.FillClass, Record<properties.Color, string>>;
 }

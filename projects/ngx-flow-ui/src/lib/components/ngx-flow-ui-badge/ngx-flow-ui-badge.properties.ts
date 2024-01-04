@@ -44,11 +44,19 @@ export class NgxFlowUiBadgeProperties implements IComponentProperties {
     xl: ' text-xl',
   };
 
-  BorderColorClass: Record<properties.Color, string> = {
-    blue: ' border border-blue-400',
-    red: ' border border-red-400',
-    green: ' border border-green-400',
-    yellow: ' border border-yellow-400',
+  BorderFillColorClass: Record<properties.FillClass, Record<properties.Color, string>> = {
+    solid: {
+      blue: '',
+      red: '',
+      green: '',
+      yellow: '',
+    },
+    outline: {
+      blue: ' border border-blue-400',
+      red: ' border border-red-400',
+      green: ' border border-green-400',
+      yellow: ' border border-yellow-400',
+    },
   };
 
   PillClass: Record<badgePill, string> = {
