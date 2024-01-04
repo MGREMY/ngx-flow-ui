@@ -16,7 +16,7 @@ jobs:
   call-build:
     uses: ./.github/workflows/build.yml
   call-deploy:
-    needs: [call_build]
+    needs: [call-build]
     if: ${{ always() && contains(join(needs.*.result, ','), 'success') && github.event_name == 'push' && github.ref_name == 'main' }}
     uses: ./.github/workflows/pages.yml
   call-test:
