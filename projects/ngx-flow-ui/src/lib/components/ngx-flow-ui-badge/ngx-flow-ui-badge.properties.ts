@@ -19,7 +19,7 @@ export class NgxFlowUiBadgeProperties implements IComponentProperties {
     return NgxFlowUiBadgeProperties.instance;
   }
 
-  BaseClass = 'me-2';
+  BaseClass = '';
 
   FillColorClass: Record<properties.FillClass, Record<properties.Color, string>> = {
     solid: {

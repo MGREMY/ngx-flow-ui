@@ -21,20 +21,24 @@ export class NgxFlowUiBadgeComponent implements OnInit {
   @Input() pill: badgeProperties.badgePill = 'disable';
   @Input() mode: badgeProperties.badgeMode = 'label';
 
+  @Input() buttonBadge: boolean = false;
+
   badgeClass: string = '';
 
   ngOnInit(): void {
     this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().BaseClass;
-    this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().SizeClass[this.size];
-    this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().FillColorClass[this.fill][this.color];
-    this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().ModeClass[this.mode];
-    this.badgeClass +=
-      badgeProperties.NgxFlowUiBadgeProperties.getInstance().BorderFillColorClass[
-        this.mode == 'label+svg' || this.fill == 'outline' ? 'outline' : this.fill
-      ][this.color];
-    this.badgeClass +=
-      badgeProperties.NgxFlowUiBadgeProperties.getInstance().PillClass[
-        this.pill == 'enable' || this.mode == 'svg' ? 'enable' : this.pill
-      ];
+    if (!this.buttonBadge) {
+      this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().SizeClass[this.size];
+      this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().FillColorClass[this.fill][this.color];
+      this.badgeClass += badgeProperties.NgxFlowUiBadgeProperties.getInstance().ModeClass[this.mode];
+      this.badgeClass +=
+        badgeProperties.NgxFlowUiBadgeProperties.getInstance().BorderFillColorClass[
+          this.mode == 'label+svg' || this.fill == 'outline' ? 'outline' : this.fill
+        ][this.color];
+      this.badgeClass +=
+        badgeProperties.NgxFlowUiBadgeProperties.getInstance().PillClass[
+          this.pill == 'enable' || this.mode == 'svg' ? 'enable' : this.pill
+        ];
+    }
   }
 }
