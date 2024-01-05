@@ -1,29 +1,56 @@
 <!-- @format -->
 
-# NgxFlowUi
+<div align="center">
+  <h1>:construction: ngx-flow-ui :construction:</h1>
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/mgremy/ngx-flow-ui?style=flat&label=Repo stars">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/mgremy/ngx-flow-ui?style=flat&label=Repo forks">
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+---
 
-## Development server
+**`ngx-flow-ui` is an open source collection of UI components, built in Angular, with utility classes from Tailwind CSS that you can use as a starting point for user interfaces and websites.**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**`ngx-flow-ui` is based on [flowbite-angular](https://github.com/themesberg/flowbite-angular), meaning that the components available in `ngx-flow-ui` will be the same as [flowbite-angular](https://github.com/themesberg/flowbite-angular). (More would be added as the time goes on).**
 
-## Code scaffolding
+## Table of content
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [Documentation](#documentation)
+- [Getting started](#getting-started)
+- [Components](#components)
+- [License](#license)
 
-## Build
+## Documentation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Working on the documentation of `ngx-flow-ui`. Available at [this link](https://mgremy.github.io/ngx-flow-ui).
 
-## Running unit tests
+If you want to learn more about Flowbite, visit [Flowbite docs](https://flowbite.com/docs/getting-started/introduction).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting started
 
-## Running end-to-end tests
+> As [flowbite-angular](https://github.com/themesberg/flowbite-angular), you just need to setup `flowbite` normally and install `ngx-flow-ui` from `npm`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Require via `npm`
 
-## Further help
+Make sure that you have [Node.js](https://nodejs.org/en) and [TailwindCSS](https://tailwindcss.com) installed.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Install `flowbite` as a dependency using `npm` by running the following command:
+
+```bash
+npm i flowbite flowbite-angular
+```
+
+2. Require `flowbite` as a plugin inside the `tailwind.config.js` file:
+
+```javascript
+module.exports = {
+  plugins: [require('flowbite/plugin')],
+};
+```
+
+## Components
+
+> The complete list of components available in `ngx-flow-ui` is available on [the documentation](https://mgremy.github.io/ngx-flow-ui/components).
+
+## License
+
+:bookmark_tabs: [Read about the Apache2 license](https://www.apache.org/licenses/LICENSE-2.0)
