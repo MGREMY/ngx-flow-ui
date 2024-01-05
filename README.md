@@ -10,7 +10,7 @@
 
 **`ngx-flow-ui` is an open source collection of UI components, built in Angular, with utility classes from Tailwind CSS that you can use as a starting point for user interfaces and websites.**
 
-**`ngx-flow-ui` is based on [flowbite-angular](https://github.com/themesberg/flowbite-angular), meaning that the components available in `ngx-flow-ui` will be the same as [flowbite-angular](https://github.com/themesberg/flowbite-angular).**
+**`ngx-flow-ui` is based on [flowbite-angular](https://github.com/themesberg/flowbite-angular), meaning that the components available in `ngx-flow-ui` will be the same as [flowbite-angular](https://github.com/themesberg/flowbite-angular). (More would be added as the time goes on).**
 
 ## Table of content
 
